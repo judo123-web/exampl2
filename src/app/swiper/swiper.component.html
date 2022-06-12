@@ -1,0 +1,12 @@
+<div class="main-wrapper">
+    <swiper [config]="config">
+        <ng-template swiperSlide swiper-slide-visible *ngFor="let card of cards">
+            <app-popup-and-card [background]="card"></app-popup-and-card>
+        </ng-template>
+
+    </swiper>
+</div>
+
+<!-- <div class="second">
+    <button (click)="outer()">click me</button>
+</div> -->
